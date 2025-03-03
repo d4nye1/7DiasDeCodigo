@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        let respuesta1 = prompt("En que area te gustaria seguir, Back-end o Front-end? ");
+        alert("Tu respuesta es: " + respuesta1);
+
+       if(respuesta1 == "Back-end"){
+            let aprender = prompt("Te gustaria aprender C# o aprender Java? ");
+            if(aprender== "React"){
+                alert("muy bien empesemos a aprender C#.");
+            }else{
+                alert("muy bien empesemos a aprender Java.");
+            }
+       }else{
+        if(respuesta1 == "Front- end"){
+            let aprender = prompt("Te gustaria aprender React o aprender Vue? ");
+            if(aprender== "React"){
+                alert("muy bien empesemos a aprender React.");
+            }else{
+                alert("muy bien empesemos a aprender Vue.");
+            }
+        }
+       }
+       if(respuesta1){
+            let aprender = prompt("escribe 1 si te gustaria seguirte desarrollando en"+respuesta1+ " o 2 si te gustaria desarrollarte para convertirse en Fullstack? ");
+            if(aprender == 1 ){
+                alert("muy bien sigamos con tu desarrollo.");
+            }else{
+                alert("muy bien empecemos para que logres ser un gran fillstack.");
+            }
+       }
+    
+    let continuar = true;
+    while (continuar) {
+        let tecnologia = prompt("¿En qué tecnología te gustaría especializarte o conocer?");
+            alert("¡Genial! " + tecnologia + " es una tecnología muy interesante.");
+        let respuesta2 = prompt("¿Hay alguna otra tecnología que te gustaría aprender? ingresa 'Si', el el caso de que no exista otra, solo responde 'No' para finalizar");
+        if (respuesta2 === 'No') {
+            continuar = false;
+        }
+    }
+
+    alert("Gracias por compartir tus intereses tecnológicos.");
+
+
+        
+       
+    </script>
+    
+</body>
+</html>
